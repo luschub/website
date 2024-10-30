@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .mindmap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .node {
+            padding: 10px 15px;
+            margin: 10px;
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .node:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .main-node {
+            background-color: #4a90e2;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .branch {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 20px;
+        }
+        
+        .sub-branch {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .connector {
+            position: relative;
+        }
+        
+        .connector::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: #ccc;
+            left: -10px;
+        }
+        
+        .level-1 {
+            background-color: #67b168;
+            color: white;
+        }
+        
+        .level-2 {
+            background-color: #5bc0de;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="mindmap">
+        <div class="branch">
+            <div class="node main-node">Unternehmerische Entscheidung</div>
+            <div class="sub-branch">
+                <!-- Kernelemente -->
+                <div class="branch connector">
+                    <div class="node level-1">Kernelemente</div>
+                    <div class="node level-2">Handlungsoptionen</div>
+                    <div class="node level-2">Definiertes Ziel</div>
+                    <div class="node level-2">Auswahlkriterien</div>
+                    <div class="node level-2">Konsequenzen</div>
+                </div>
+                
+                <!-- Charakteristika -->
+                <div class="branch connector">
+                    <div class="node level-1">Charakteristika</div>
+                    <div class="node level-2">Unsicherheit/Risiko</div>
+                    <div class="node level-2">Reversibilität</div>
+                    <div class="node level-2">Reichweite</div>
+                    <div class="node level-2">Entscheidungsebenen</div>
+                </div>
+                
+                <!-- Beispiele -->
+                <div class="branch connector">
+                    <div class="node level-1">Beispiele</div>
+                    <div class="node level-2">Investitionen</div>
+                    <div class="node level-2">Personal</div>
+                    <div class="node level-2">Standort</div>
+                    <div class="node level-2">Produktentwicklung</div>
+                    <div class="node level-2">Make-or-Buy</div>
+                </div>
+                
+                <!-- Einflussfaktoren -->
+                <div class="branch connector">
+                    <div class="node level-1">Einflussfaktoren</div>
+                    <div class="node level-2">Informationen</div>
+                    <div class="node level-2">Zeitdruck</div>
+                    <div class="node level-2">Ressourcen</div>
+                    <div class="node level-2">Marktbedingungen</div>
+                    <div class="node level-2">Rechtliche Rahmen</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
