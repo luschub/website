@@ -1,0 +1,7 @@
+baseURL = 'https://saubereco.de/'  # Ersetze durch die tatsächliche URL deiner Website
+languageCode = 'de-de'             # Ändere auf Deutsch, falls deine Website auf Deutsch ist
+title = 'Saubereco - Nachhaltigkeit im Fokus' # Wähle einen relevanten Titel
+
+theme = "ananke"  # Name des Themes, das du installiert hast
+paginate = 10      # Anzahl der Beiträge pro Seite
+defaultContentLanguage = "de" # Standard-Sprache deiner Inhalte
